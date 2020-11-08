@@ -1,0 +1,1303 @@
+/*Global reset*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+}
+
+header .menu-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #21213F;
+}
+header .menu-info .top-menu-info {
+  display: flex;
+  padding: 8px 0;
+  width: 80%;
+  justify-content: space-between;
+  font-weight: normal;
+}
+header .menu-info .top-menu-info .company-email-container {
+  padding: 4px;
+  display: flex;
+}
+header .menu-info .top-menu-info .company-email-container a {
+  text-decoration: none;
+}
+header .menu-info .top-menu-info .company-email-container a p {
+  color: #fff;
+  font-size: 16px;
+}
+header .menu-info .top-menu-info .company-email-container i {
+  font-size: 18px;
+  color: #fff;
+  padding-right: 8px;
+  padding-top: 4px;
+}
+header .menu-info .top-menu-info .company-email-container a:hover {
+  cursor: pointer;
+}
+header .menu-info .top-menu-info .sign-up-container {
+  display: flex;
+  padding: 4px;
+}
+header .menu-info .top-menu-info .sign-up-container p {
+  color: #fff;
+  font-size: 16px;
+}
+header .menu-info .top-menu-info .sign-up-container p a {
+  color: inherit;
+  text-decoration: none;
+}
+header .menu-info .top-menu-info .sign-up-container i {
+  font-size: 18px;
+  color: #fff;
+  padding-right: 8px;
+  padding-top: 4px;
+}
+header .menu-info .top-menu-info .sign-up-container:hover {
+  cursor: pointer;
+}
+header .bottom-menu {
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .bottom-menu .navigation-container {
+  display: flex;
+  width: 80%;
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+header .bottom-menu .navigation-container .company-logo-container {
+  flex: 1.5;
+}
+header .bottom-menu .navigation-container .company-logo-container img {
+  padding-bottom: 8px;
+}
+header .bottom-menu .navigation-container .company-logo-container p {
+  color: #444;
+  line-height: 1.5;
+  font-size: 14px;
+  padding: 0;
+}
+header .bottom-menu .navigation-container .serach-container {
+  flex: 4;
+}
+header .bottom-menu .navigation-container .serach-container .navigation {
+  display: flex;
+  padding: 4px 0;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: normal;
+}
+header .bottom-menu .navigation-container .serach-container .navigation a {
+  padding: 0 8px;
+  font-size: 14px;
+  color: #444;
+  text-decoration: none;
+}
+header .bottom-menu .navigation-container .serach-container .navigation a:hover {
+  color: #ff8826;
+  cursor: pointer;
+}
+header .bottom-menu .navigation-container .serach-container .navigation:first-child {
+  padding-left: 8px;
+}
+header .bottom-menu .navigation-container .serach-container .search {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 16px;
+  margin-left: 16px;
+}
+header .bottom-menu .navigation-container .serach-container .search .catalog-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #444;
+  border: 1px solid #929292;
+  border-radius: 6px;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  background-color: #E0E0E0;
+}
+header .bottom-menu .navigation-container .serach-container .search .catalog-button p {
+  font-weight: bold;
+  padding-left: 8px;
+}
+header .bottom-menu .navigation-container .serach-container .search .dropdown-list {
+  display: none;
+  position: absolute;
+  top: 186px;
+  left: 26%;
+  padding: 20px 30px;
+  background-color: #F6F6F6;
+  border-radius: 6px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15), 0 6px 10px rgba(0, 0, 0, 0.1);
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: none;
+  line-height: 2;
+}
+header .bottom-menu .navigation-container .serach-container .search .dropdown-list ul {
+  text-align: left;
+  list-style: none;
+}
+header .bottom-menu .navigation-container .serach-container .search .dropdown-list ul li a {
+  text-decoration: none;
+  color: #444;
+}
+header .bottom-menu .navigation-container .serach-container .search .dropdown-list ul li a:hover {
+  text-decoration: underline;
+  color: #ff8826;
+}
+header .bottom-menu .navigation-container .serach-container .search .catalog-button:focus .dropdown-list {
+  display: block;
+}
+header .bottom-menu .navigation-container .serach-container .search .catalog-button:hover {
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+header .bottom-menu .navigation-container .serach-container .search .search-input {
+  border: 1px solid #929292;
+  border-radius: 6px;
+  width: 60%;
+  font-size: 16px;
+  color: #444;
+  padding: 12px 16px;
+}
+header .bottom-menu .navigation-container .serach-container .search .search-button {
+  font-size: 24px;
+  color: #444;
+  background-color: #E0E0E0;
+  border: 1px solid #929292;
+  border-radius: 6px;
+  padding: 8px 11px;
+}
+header .bottom-menu .navigation-container .serach-container .search .search-button:hover {
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+header .bottom-menu .navigation-container .ordering-container {
+  flex: 2;
+}
+header .bottom-menu .navigation-container .ordering-container .icons-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .bottom-menu .navigation-container .ordering-container .icons-container .list-icon-container {
+  text-align: center;
+  padding-right: 32px;
+}
+header .bottom-menu .navigation-container .ordering-container .icons-container .list-icon-container i {
+  font-size: 24px;
+  color: #444;
+}
+header .bottom-menu .navigation-container .ordering-container .icons-container .list-icon-container p {
+  font-size: 16px;
+  color: #444;
+}
+header .bottom-menu .navigation-container .ordering-container .icons-container .list-icon-container:hover {
+  cursor: pointer;
+}
+header .bottom-menu .navigation-container .ordering-container .icons-container .list-icon-container:hover i, header .bottom-menu .navigation-container .ordering-container .icons-container .list-icon-container:hover p {
+  color: #777;
+}
+header .bottom-menu .navigation-container .ordering-container .icons-container .cart-icon-container {
+  text-align: center;
+}
+header .bottom-menu .navigation-container .ordering-container .icons-container .cart-icon-container i {
+  font-size: 24px;
+  color: #444;
+}
+header .bottom-menu .navigation-container .ordering-container .icons-container .cart-icon-container p {
+  font-size: 16px;
+  color: #444;
+}
+header .bottom-menu .navigation-container .ordering-container .icons-container .cart-icon-container:hover {
+  cursor: pointer;
+}
+header .bottom-menu .navigation-container .ordering-container .icons-container .cart-icon-container:hover i, header .bottom-menu .navigation-container .ordering-container .icons-container .cart-icon-container:hover p {
+  color: #777;
+}
+header .bottom-menu .navigation-container .ordering-container .tel-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  font-size: 20px;
+  color: #444;
+}
+header .bottom-menu .navigation-container .ordering-container .tel-container a {
+  color: #444;
+  text-decoration: none;
+}
+header .bottom-menu .navigation-container .ordering-container .tel-container a:hover {
+  cursor: pointer;
+}
+header .mt {
+  margin-top: 80px;
+}
+header .mb {
+  margin-top: 80px;
+}
+
+main .full-catalog {
+  display: flex;
+  justify-content: center;
+}
+main .full-catalog .full-catalog-container {
+  display: flex;
+}
+main .full-catalog .full-catalog-container p {
+  font-size: 24px;
+  color: #444;
+  font-weight: 400;
+}
+main .full-catalog .full-catalog-container i {
+  font-size: 16px;
+  color: #444;
+  padding-top: 12px;
+  padding-left: 8px;
+}
+main .full-catalog .full-catalog-container:hover {
+  cursor: pointer;
+}
+main .main-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+}
+main .main-content .cards-container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+main .main-content .cards-container .card {
+  width: 270px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 20px #cdc;
+  transition: 0.3s all;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding-bottom: 24px;
+  margin-bottom: 60px;
+  position: relative;
+}
+main .main-content .cards-container .card .recommend-block {
+  position: absolute;
+  color: #fff;
+  font-size: 12px;
+  background-color: #444482;
+  padding: 4px 8px;
+  top: 20px;
+  left: 20px;
+  border-radius: 4px;
+  z-index: 1;
+}
+main .main-content .cards-container .card .new-block {
+  position: absolute;
+  color: #fff;
+  font-size: 12px;
+  background-color: #333333;
+  padding: 4px 8px;
+  top: 20px;
+  left: 20px;
+  border-radius: 4px;
+  z-index: 1;
+}
+main .main-content .cards-container .card .sales-hit-block {
+  position: absolute;
+  color: #fff;
+  font-size: 12px;
+  background-color: #ff8826;
+  padding: 4px 8px;
+  top: 20px;
+  left: 20px;
+  border-radius: 4px;
+  z-index: 1;
+}
+main .main-content .cards-container .card .img-container {
+  position: relative;
+  padding: 16px;
+}
+main .main-content .cards-container .card .img-container img {
+  width: 100%;
+}
+main .main-content .cards-container .card .block {
+  content: "";
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  right: 16px;
+  top: 16px;
+  background: #636363b3;
+  opacity: 0.15;
+  border-radius: 6px;
+  display: none;
+}
+main .main-content .cards-container .card .img-container:hover .block {
+  display: block;
+  cursor: pointer;
+}
+main .main-content .cards-container .card .description {
+  padding: 8px 20px;
+  text-align: start;
+}
+main .main-content .cards-container .card .description a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #444;
+}
+main .main-content .cards-container .card .description a span {
+  display: block;
+}
+main .main-content .cards-container .card .description a:hover {
+  color: #ff8826;
+}
+main .main-content .cards-container .card .price {
+  font-size: 18px;
+  color: #555;
+  font-weight: bold;
+  padding: 8px 20px;
+}
+main .main-content .cards-container .card:last-child {
+  margin-right: 0;
+}
+main .main-content .cards-container .card:hover {
+  box-shadow: none;
+}
+main .news {
+  display: flex;
+  justify-content: center;
+}
+main .news .news-container {
+  width: 80%;
+}
+main .news .news-container .heading {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 32px;
+  padding-top: 64px;
+}
+main .news .news-container .heading p {
+  font-size: 24px;
+  color: #444;
+  font-weight: 400;
+}
+main .news .news-container .heading a {
+  font-size: 18px;
+  color: #444;
+}
+main .news .news-container .news-boxes-container {
+  display: flex;
+  justify-content: space-between;
+}
+main .news .news-container .news-boxes-container .news-box {
+  display: flex;
+  background-color: #efefef;
+  width: 100%;
+  padding: 16px;
+}
+main .news .news-container .news-boxes-container .news-box img {
+  width: 160px;
+  height: 160px;
+}
+main .news .news-container .news-boxes-container .news-box .text-container {
+  padding-left: 16px;
+}
+main .news .news-container .news-boxes-container .news-box .text-container .news-date {
+  color: #999;
+  padding-bottom: 12px;
+}
+main .news .news-container .news-boxes-container .news-box .text-container a {
+  color: #444;
+}
+main .news .news-container .news-boxes-container .news-box .text-container .news-text {
+  padding-top: 8px;
+  line-height: 1.5;
+}
+main .tech-info {
+  display: flex;
+  justify-content: center;
+}
+main .tech-info .tech-info-container {
+  width: 80%;
+}
+main .tech-info .tech-info-container .text-info {
+  font-size: 16px;
+  color: #444;
+  line-height: 2.5;
+}
+main .tech-info .tech-info-container .list-info {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.5;
+  padding-left: 48px;
+}
+main .about-us-container,
+main .delivery-payment-container,
+main .contacts-container,
+main .registration-container {
+  display: flex;
+  justify-content: center;
+}
+main .about-us-container .about-us-info,
+main .about-us-container .delivery-payment-info,
+main .about-us-container .contacts-info,
+main .about-us-container .registration-info,
+main .delivery-payment-container .about-us-info,
+main .delivery-payment-container .delivery-payment-info,
+main .delivery-payment-container .contacts-info,
+main .delivery-payment-container .registration-info,
+main .contacts-container .about-us-info,
+main .contacts-container .delivery-payment-info,
+main .contacts-container .contacts-info,
+main .contacts-container .registration-info,
+main .registration-container .about-us-info,
+main .registration-container .delivery-payment-info,
+main .registration-container .contacts-info,
+main .registration-container .registration-info {
+  width: 80%;
+}
+main .about-us-container .about-us-info .main-about-us-page-link,
+main .about-us-container .about-us-info .main-delivery-payment-page-link,
+main .about-us-container .about-us-info .main-contacts-page-link,
+main .about-us-container .about-us-info .main-registration-page-link,
+main .about-us-container .delivery-payment-info .main-about-us-page-link,
+main .about-us-container .delivery-payment-info .main-delivery-payment-page-link,
+main .about-us-container .delivery-payment-info .main-contacts-page-link,
+main .about-us-container .delivery-payment-info .main-registration-page-link,
+main .about-us-container .contacts-info .main-about-us-page-link,
+main .about-us-container .contacts-info .main-delivery-payment-page-link,
+main .about-us-container .contacts-info .main-contacts-page-link,
+main .about-us-container .contacts-info .main-registration-page-link,
+main .about-us-container .registration-info .main-about-us-page-link,
+main .about-us-container .registration-info .main-delivery-payment-page-link,
+main .about-us-container .registration-info .main-contacts-page-link,
+main .about-us-container .registration-info .main-registration-page-link,
+main .delivery-payment-container .about-us-info .main-about-us-page-link,
+main .delivery-payment-container .about-us-info .main-delivery-payment-page-link,
+main .delivery-payment-container .about-us-info .main-contacts-page-link,
+main .delivery-payment-container .about-us-info .main-registration-page-link,
+main .delivery-payment-container .delivery-payment-info .main-about-us-page-link,
+main .delivery-payment-container .delivery-payment-info .main-delivery-payment-page-link,
+main .delivery-payment-container .delivery-payment-info .main-contacts-page-link,
+main .delivery-payment-container .delivery-payment-info .main-registration-page-link,
+main .delivery-payment-container .contacts-info .main-about-us-page-link,
+main .delivery-payment-container .contacts-info .main-delivery-payment-page-link,
+main .delivery-payment-container .contacts-info .main-contacts-page-link,
+main .delivery-payment-container .contacts-info .main-registration-page-link,
+main .delivery-payment-container .registration-info .main-about-us-page-link,
+main .delivery-payment-container .registration-info .main-delivery-payment-page-link,
+main .delivery-payment-container .registration-info .main-contacts-page-link,
+main .delivery-payment-container .registration-info .main-registration-page-link,
+main .contacts-container .about-us-info .main-about-us-page-link,
+main .contacts-container .about-us-info .main-delivery-payment-page-link,
+main .contacts-container .about-us-info .main-contacts-page-link,
+main .contacts-container .about-us-info .main-registration-page-link,
+main .contacts-container .delivery-payment-info .main-about-us-page-link,
+main .contacts-container .delivery-payment-info .main-delivery-payment-page-link,
+main .contacts-container .delivery-payment-info .main-contacts-page-link,
+main .contacts-container .delivery-payment-info .main-registration-page-link,
+main .contacts-container .contacts-info .main-about-us-page-link,
+main .contacts-container .contacts-info .main-delivery-payment-page-link,
+main .contacts-container .contacts-info .main-contacts-page-link,
+main .contacts-container .contacts-info .main-registration-page-link,
+main .contacts-container .registration-info .main-about-us-page-link,
+main .contacts-container .registration-info .main-delivery-payment-page-link,
+main .contacts-container .registration-info .main-contacts-page-link,
+main .contacts-container .registration-info .main-registration-page-link,
+main .registration-container .about-us-info .main-about-us-page-link,
+main .registration-container .about-us-info .main-delivery-payment-page-link,
+main .registration-container .about-us-info .main-contacts-page-link,
+main .registration-container .about-us-info .main-registration-page-link,
+main .registration-container .delivery-payment-info .main-about-us-page-link,
+main .registration-container .delivery-payment-info .main-delivery-payment-page-link,
+main .registration-container .delivery-payment-info .main-contacts-page-link,
+main .registration-container .delivery-payment-info .main-registration-page-link,
+main .registration-container .contacts-info .main-about-us-page-link,
+main .registration-container .contacts-info .main-delivery-payment-page-link,
+main .registration-container .contacts-info .main-contacts-page-link,
+main .registration-container .contacts-info .main-registration-page-link,
+main .registration-container .registration-info .main-about-us-page-link,
+main .registration-container .registration-info .main-delivery-payment-page-link,
+main .registration-container .registration-info .main-contacts-page-link,
+main .registration-container .registration-info .main-registration-page-link {
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+main .about-us-container .about-us-info .main-about-us-page-link p a,
+main .about-us-container .about-us-info .main-delivery-payment-page-link p a,
+main .about-us-container .about-us-info .main-contacts-page-link p a,
+main .about-us-container .about-us-info .main-registration-page-link p a,
+main .about-us-container .delivery-payment-info .main-about-us-page-link p a,
+main .about-us-container .delivery-payment-info .main-delivery-payment-page-link p a,
+main .about-us-container .delivery-payment-info .main-contacts-page-link p a,
+main .about-us-container .delivery-payment-info .main-registration-page-link p a,
+main .about-us-container .contacts-info .main-about-us-page-link p a,
+main .about-us-container .contacts-info .main-delivery-payment-page-link p a,
+main .about-us-container .contacts-info .main-contacts-page-link p a,
+main .about-us-container .contacts-info .main-registration-page-link p a,
+main .about-us-container .registration-info .main-about-us-page-link p a,
+main .about-us-container .registration-info .main-delivery-payment-page-link p a,
+main .about-us-container .registration-info .main-contacts-page-link p a,
+main .about-us-container .registration-info .main-registration-page-link p a,
+main .delivery-payment-container .about-us-info .main-about-us-page-link p a,
+main .delivery-payment-container .about-us-info .main-delivery-payment-page-link p a,
+main .delivery-payment-container .about-us-info .main-contacts-page-link p a,
+main .delivery-payment-container .about-us-info .main-registration-page-link p a,
+main .delivery-payment-container .delivery-payment-info .main-about-us-page-link p a,
+main .delivery-payment-container .delivery-payment-info .main-delivery-payment-page-link p a,
+main .delivery-payment-container .delivery-payment-info .main-contacts-page-link p a,
+main .delivery-payment-container .delivery-payment-info .main-registration-page-link p a,
+main .delivery-payment-container .contacts-info .main-about-us-page-link p a,
+main .delivery-payment-container .contacts-info .main-delivery-payment-page-link p a,
+main .delivery-payment-container .contacts-info .main-contacts-page-link p a,
+main .delivery-payment-container .contacts-info .main-registration-page-link p a,
+main .delivery-payment-container .registration-info .main-about-us-page-link p a,
+main .delivery-payment-container .registration-info .main-delivery-payment-page-link p a,
+main .delivery-payment-container .registration-info .main-contacts-page-link p a,
+main .delivery-payment-container .registration-info .main-registration-page-link p a,
+main .contacts-container .about-us-info .main-about-us-page-link p a,
+main .contacts-container .about-us-info .main-delivery-payment-page-link p a,
+main .contacts-container .about-us-info .main-contacts-page-link p a,
+main .contacts-container .about-us-info .main-registration-page-link p a,
+main .contacts-container .delivery-payment-info .main-about-us-page-link p a,
+main .contacts-container .delivery-payment-info .main-delivery-payment-page-link p a,
+main .contacts-container .delivery-payment-info .main-contacts-page-link p a,
+main .contacts-container .delivery-payment-info .main-registration-page-link p a,
+main .contacts-container .contacts-info .main-about-us-page-link p a,
+main .contacts-container .contacts-info .main-delivery-payment-page-link p a,
+main .contacts-container .contacts-info .main-contacts-page-link p a,
+main .contacts-container .contacts-info .main-registration-page-link p a,
+main .contacts-container .registration-info .main-about-us-page-link p a,
+main .contacts-container .registration-info .main-delivery-payment-page-link p a,
+main .contacts-container .registration-info .main-contacts-page-link p a,
+main .contacts-container .registration-info .main-registration-page-link p a,
+main .registration-container .about-us-info .main-about-us-page-link p a,
+main .registration-container .about-us-info .main-delivery-payment-page-link p a,
+main .registration-container .about-us-info .main-contacts-page-link p a,
+main .registration-container .about-us-info .main-registration-page-link p a,
+main .registration-container .delivery-payment-info .main-about-us-page-link p a,
+main .registration-container .delivery-payment-info .main-delivery-payment-page-link p a,
+main .registration-container .delivery-payment-info .main-contacts-page-link p a,
+main .registration-container .delivery-payment-info .main-registration-page-link p a,
+main .registration-container .contacts-info .main-about-us-page-link p a,
+main .registration-container .contacts-info .main-delivery-payment-page-link p a,
+main .registration-container .contacts-info .main-contacts-page-link p a,
+main .registration-container .contacts-info .main-registration-page-link p a,
+main .registration-container .registration-info .main-about-us-page-link p a,
+main .registration-container .registration-info .main-delivery-payment-page-link p a,
+main .registration-container .registration-info .main-contacts-page-link p a,
+main .registration-container .registration-info .main-registration-page-link p a {
+  text-decoration: none;
+}
+main .about-us-container .about-us-info .main-about-us-page-link p a:hover,
+main .about-us-container .about-us-info .main-delivery-payment-page-link p a:hover,
+main .about-us-container .about-us-info .main-contacts-page-link p a:hover,
+main .about-us-container .about-us-info .main-registration-page-link p a:hover,
+main .about-us-container .delivery-payment-info .main-about-us-page-link p a:hover,
+main .about-us-container .delivery-payment-info .main-delivery-payment-page-link p a:hover,
+main .about-us-container .delivery-payment-info .main-contacts-page-link p a:hover,
+main .about-us-container .delivery-payment-info .main-registration-page-link p a:hover,
+main .about-us-container .contacts-info .main-about-us-page-link p a:hover,
+main .about-us-container .contacts-info .main-delivery-payment-page-link p a:hover,
+main .about-us-container .contacts-info .main-contacts-page-link p a:hover,
+main .about-us-container .contacts-info .main-registration-page-link p a:hover,
+main .about-us-container .registration-info .main-about-us-page-link p a:hover,
+main .about-us-container .registration-info .main-delivery-payment-page-link p a:hover,
+main .about-us-container .registration-info .main-contacts-page-link p a:hover,
+main .about-us-container .registration-info .main-registration-page-link p a:hover,
+main .delivery-payment-container .about-us-info .main-about-us-page-link p a:hover,
+main .delivery-payment-container .about-us-info .main-delivery-payment-page-link p a:hover,
+main .delivery-payment-container .about-us-info .main-contacts-page-link p a:hover,
+main .delivery-payment-container .about-us-info .main-registration-page-link p a:hover,
+main .delivery-payment-container .delivery-payment-info .main-about-us-page-link p a:hover,
+main .delivery-payment-container .delivery-payment-info .main-delivery-payment-page-link p a:hover,
+main .delivery-payment-container .delivery-payment-info .main-contacts-page-link p a:hover,
+main .delivery-payment-container .delivery-payment-info .main-registration-page-link p a:hover,
+main .delivery-payment-container .contacts-info .main-about-us-page-link p a:hover,
+main .delivery-payment-container .contacts-info .main-delivery-payment-page-link p a:hover,
+main .delivery-payment-container .contacts-info .main-contacts-page-link p a:hover,
+main .delivery-payment-container .contacts-info .main-registration-page-link p a:hover,
+main .delivery-payment-container .registration-info .main-about-us-page-link p a:hover,
+main .delivery-payment-container .registration-info .main-delivery-payment-page-link p a:hover,
+main .delivery-payment-container .registration-info .main-contacts-page-link p a:hover,
+main .delivery-payment-container .registration-info .main-registration-page-link p a:hover,
+main .contacts-container .about-us-info .main-about-us-page-link p a:hover,
+main .contacts-container .about-us-info .main-delivery-payment-page-link p a:hover,
+main .contacts-container .about-us-info .main-contacts-page-link p a:hover,
+main .contacts-container .about-us-info .main-registration-page-link p a:hover,
+main .contacts-container .delivery-payment-info .main-about-us-page-link p a:hover,
+main .contacts-container .delivery-payment-info .main-delivery-payment-page-link p a:hover,
+main .contacts-container .delivery-payment-info .main-contacts-page-link p a:hover,
+main .contacts-container .delivery-payment-info .main-registration-page-link p a:hover,
+main .contacts-container .contacts-info .main-about-us-page-link p a:hover,
+main .contacts-container .contacts-info .main-delivery-payment-page-link p a:hover,
+main .contacts-container .contacts-info .main-contacts-page-link p a:hover,
+main .contacts-container .contacts-info .main-registration-page-link p a:hover,
+main .contacts-container .registration-info .main-about-us-page-link p a:hover,
+main .contacts-container .registration-info .main-delivery-payment-page-link p a:hover,
+main .contacts-container .registration-info .main-contacts-page-link p a:hover,
+main .contacts-container .registration-info .main-registration-page-link p a:hover,
+main .registration-container .about-us-info .main-about-us-page-link p a:hover,
+main .registration-container .about-us-info .main-delivery-payment-page-link p a:hover,
+main .registration-container .about-us-info .main-contacts-page-link p a:hover,
+main .registration-container .about-us-info .main-registration-page-link p a:hover,
+main .registration-container .delivery-payment-info .main-about-us-page-link p a:hover,
+main .registration-container .delivery-payment-info .main-delivery-payment-page-link p a:hover,
+main .registration-container .delivery-payment-info .main-contacts-page-link p a:hover,
+main .registration-container .delivery-payment-info .main-registration-page-link p a:hover,
+main .registration-container .contacts-info .main-about-us-page-link p a:hover,
+main .registration-container .contacts-info .main-delivery-payment-page-link p a:hover,
+main .registration-container .contacts-info .main-contacts-page-link p a:hover,
+main .registration-container .contacts-info .main-registration-page-link p a:hover,
+main .registration-container .registration-info .main-about-us-page-link p a:hover,
+main .registration-container .registration-info .main-delivery-payment-page-link p a:hover,
+main .registration-container .registration-info .main-contacts-page-link p a:hover,
+main .registration-container .registration-info .main-registration-page-link p a:hover {
+  cursor: pointer;
+}
+main .about-us-container .about-us-info .about-us-heading,
+main .about-us-container .about-us-info .delivery-payment-heading,
+main .about-us-container .about-us-info .contacts-heading,
+main .about-us-container .about-us-info .registration-heading,
+main .about-us-container .delivery-payment-info .about-us-heading,
+main .about-us-container .delivery-payment-info .delivery-payment-heading,
+main .about-us-container .delivery-payment-info .contacts-heading,
+main .about-us-container .delivery-payment-info .registration-heading,
+main .about-us-container .contacts-info .about-us-heading,
+main .about-us-container .contacts-info .delivery-payment-heading,
+main .about-us-container .contacts-info .contacts-heading,
+main .about-us-container .contacts-info .registration-heading,
+main .about-us-container .registration-info .about-us-heading,
+main .about-us-container .registration-info .delivery-payment-heading,
+main .about-us-container .registration-info .contacts-heading,
+main .about-us-container .registration-info .registration-heading,
+main .delivery-payment-container .about-us-info .about-us-heading,
+main .delivery-payment-container .about-us-info .delivery-payment-heading,
+main .delivery-payment-container .about-us-info .contacts-heading,
+main .delivery-payment-container .about-us-info .registration-heading,
+main .delivery-payment-container .delivery-payment-info .about-us-heading,
+main .delivery-payment-container .delivery-payment-info .delivery-payment-heading,
+main .delivery-payment-container .delivery-payment-info .contacts-heading,
+main .delivery-payment-container .delivery-payment-info .registration-heading,
+main .delivery-payment-container .contacts-info .about-us-heading,
+main .delivery-payment-container .contacts-info .delivery-payment-heading,
+main .delivery-payment-container .contacts-info .contacts-heading,
+main .delivery-payment-container .contacts-info .registration-heading,
+main .delivery-payment-container .registration-info .about-us-heading,
+main .delivery-payment-container .registration-info .delivery-payment-heading,
+main .delivery-payment-container .registration-info .contacts-heading,
+main .delivery-payment-container .registration-info .registration-heading,
+main .contacts-container .about-us-info .about-us-heading,
+main .contacts-container .about-us-info .delivery-payment-heading,
+main .contacts-container .about-us-info .contacts-heading,
+main .contacts-container .about-us-info .registration-heading,
+main .contacts-container .delivery-payment-info .about-us-heading,
+main .contacts-container .delivery-payment-info .delivery-payment-heading,
+main .contacts-container .delivery-payment-info .contacts-heading,
+main .contacts-container .delivery-payment-info .registration-heading,
+main .contacts-container .contacts-info .about-us-heading,
+main .contacts-container .contacts-info .delivery-payment-heading,
+main .contacts-container .contacts-info .contacts-heading,
+main .contacts-container .contacts-info .registration-heading,
+main .contacts-container .registration-info .about-us-heading,
+main .contacts-container .registration-info .delivery-payment-heading,
+main .contacts-container .registration-info .contacts-heading,
+main .contacts-container .registration-info .registration-heading,
+main .registration-container .about-us-info .about-us-heading,
+main .registration-container .about-us-info .delivery-payment-heading,
+main .registration-container .about-us-info .contacts-heading,
+main .registration-container .about-us-info .registration-heading,
+main .registration-container .delivery-payment-info .about-us-heading,
+main .registration-container .delivery-payment-info .delivery-payment-heading,
+main .registration-container .delivery-payment-info .contacts-heading,
+main .registration-container .delivery-payment-info .registration-heading,
+main .registration-container .contacts-info .about-us-heading,
+main .registration-container .contacts-info .delivery-payment-heading,
+main .registration-container .contacts-info .contacts-heading,
+main .registration-container .contacts-info .registration-heading,
+main .registration-container .registration-info .about-us-heading,
+main .registration-container .registration-info .delivery-payment-heading,
+main .registration-container .registration-info .contacts-heading,
+main .registration-container .registration-info .registration-heading {
+  font-size: 28px;
+  color: #444;
+  font-weight: 400;
+  padding-bottom: 40px;
+}
+main .about-us-container .about-us-info .delivery-payment-heading-second-level,
+main .about-us-container .delivery-payment-info .delivery-payment-heading-second-level,
+main .about-us-container .contacts-info .delivery-payment-heading-second-level,
+main .about-us-container .registration-info .delivery-payment-heading-second-level,
+main .delivery-payment-container .about-us-info .delivery-payment-heading-second-level,
+main .delivery-payment-container .delivery-payment-info .delivery-payment-heading-second-level,
+main .delivery-payment-container .contacts-info .delivery-payment-heading-second-level,
+main .delivery-payment-container .registration-info .delivery-payment-heading-second-level,
+main .contacts-container .about-us-info .delivery-payment-heading-second-level,
+main .contacts-container .delivery-payment-info .delivery-payment-heading-second-level,
+main .contacts-container .contacts-info .delivery-payment-heading-second-level,
+main .contacts-container .registration-info .delivery-payment-heading-second-level,
+main .registration-container .about-us-info .delivery-payment-heading-second-level,
+main .registration-container .delivery-payment-info .delivery-payment-heading-second-level,
+main .registration-container .contacts-info .delivery-payment-heading-second-level,
+main .registration-container .registration-info .delivery-payment-heading-second-level {
+  font-size: 20px;
+  color: #444;
+  font-weight: 400;
+}
+main .about-us-container .about-us-info img,
+main .about-us-container .delivery-payment-info img,
+main .about-us-container .contacts-info img,
+main .about-us-container .registration-info img,
+main .delivery-payment-container .about-us-info img,
+main .delivery-payment-container .delivery-payment-info img,
+main .delivery-payment-container .contacts-info img,
+main .delivery-payment-container .registration-info img,
+main .contacts-container .about-us-info img,
+main .contacts-container .delivery-payment-info img,
+main .contacts-container .contacts-info img,
+main .contacts-container .registration-info img,
+main .registration-container .about-us-info img,
+main .registration-container .delivery-payment-info img,
+main .registration-container .contacts-info img,
+main .registration-container .registration-info img {
+  margin: 16px 0;
+}
+main .about-us-container .about-us-info .about-us-text p,
+main .about-us-container .about-us-info .delivery-payment-text p,
+main .about-us-container .about-us-info .contacts-text p,
+main .about-us-container .delivery-payment-info .about-us-text p,
+main .about-us-container .delivery-payment-info .delivery-payment-text p,
+main .about-us-container .delivery-payment-info .contacts-text p,
+main .about-us-container .contacts-info .about-us-text p,
+main .about-us-container .contacts-info .delivery-payment-text p,
+main .about-us-container .contacts-info .contacts-text p,
+main .about-us-container .registration-info .about-us-text p,
+main .about-us-container .registration-info .delivery-payment-text p,
+main .about-us-container .registration-info .contacts-text p,
+main .delivery-payment-container .about-us-info .about-us-text p,
+main .delivery-payment-container .about-us-info .delivery-payment-text p,
+main .delivery-payment-container .about-us-info .contacts-text p,
+main .delivery-payment-container .delivery-payment-info .about-us-text p,
+main .delivery-payment-container .delivery-payment-info .delivery-payment-text p,
+main .delivery-payment-container .delivery-payment-info .contacts-text p,
+main .delivery-payment-container .contacts-info .about-us-text p,
+main .delivery-payment-container .contacts-info .delivery-payment-text p,
+main .delivery-payment-container .contacts-info .contacts-text p,
+main .delivery-payment-container .registration-info .about-us-text p,
+main .delivery-payment-container .registration-info .delivery-payment-text p,
+main .delivery-payment-container .registration-info .contacts-text p,
+main .contacts-container .about-us-info .about-us-text p,
+main .contacts-container .about-us-info .delivery-payment-text p,
+main .contacts-container .about-us-info .contacts-text p,
+main .contacts-container .delivery-payment-info .about-us-text p,
+main .contacts-container .delivery-payment-info .delivery-payment-text p,
+main .contacts-container .delivery-payment-info .contacts-text p,
+main .contacts-container .contacts-info .about-us-text p,
+main .contacts-container .contacts-info .delivery-payment-text p,
+main .contacts-container .contacts-info .contacts-text p,
+main .contacts-container .registration-info .about-us-text p,
+main .contacts-container .registration-info .delivery-payment-text p,
+main .contacts-container .registration-info .contacts-text p,
+main .registration-container .about-us-info .about-us-text p,
+main .registration-container .about-us-info .delivery-payment-text p,
+main .registration-container .about-us-info .contacts-text p,
+main .registration-container .delivery-payment-info .about-us-text p,
+main .registration-container .delivery-payment-info .delivery-payment-text p,
+main .registration-container .delivery-payment-info .contacts-text p,
+main .registration-container .contacts-info .about-us-text p,
+main .registration-container .contacts-info .delivery-payment-text p,
+main .registration-container .contacts-info .contacts-text p,
+main .registration-container .registration-info .about-us-text p,
+main .registration-container .registration-info .delivery-payment-text p,
+main .registration-container .registration-info .contacts-text p {
+  font-size: 16px;
+  color: #444;
+  padding: 8px 0;
+}
+main .about-us-container .about-us-info .about-us-text p span,
+main .about-us-container .about-us-info .delivery-payment-text p span,
+main .about-us-container .about-us-info .contacts-text p span,
+main .about-us-container .delivery-payment-info .about-us-text p span,
+main .about-us-container .delivery-payment-info .delivery-payment-text p span,
+main .about-us-container .delivery-payment-info .contacts-text p span,
+main .about-us-container .contacts-info .about-us-text p span,
+main .about-us-container .contacts-info .delivery-payment-text p span,
+main .about-us-container .contacts-info .contacts-text p span,
+main .about-us-container .registration-info .about-us-text p span,
+main .about-us-container .registration-info .delivery-payment-text p span,
+main .about-us-container .registration-info .contacts-text p span,
+main .delivery-payment-container .about-us-info .about-us-text p span,
+main .delivery-payment-container .about-us-info .delivery-payment-text p span,
+main .delivery-payment-container .about-us-info .contacts-text p span,
+main .delivery-payment-container .delivery-payment-info .about-us-text p span,
+main .delivery-payment-container .delivery-payment-info .delivery-payment-text p span,
+main .delivery-payment-container .delivery-payment-info .contacts-text p span,
+main .delivery-payment-container .contacts-info .about-us-text p span,
+main .delivery-payment-container .contacts-info .delivery-payment-text p span,
+main .delivery-payment-container .contacts-info .contacts-text p span,
+main .delivery-payment-container .registration-info .about-us-text p span,
+main .delivery-payment-container .registration-info .delivery-payment-text p span,
+main .delivery-payment-container .registration-info .contacts-text p span,
+main .contacts-container .about-us-info .about-us-text p span,
+main .contacts-container .about-us-info .delivery-payment-text p span,
+main .contacts-container .about-us-info .contacts-text p span,
+main .contacts-container .delivery-payment-info .about-us-text p span,
+main .contacts-container .delivery-payment-info .delivery-payment-text p span,
+main .contacts-container .delivery-payment-info .contacts-text p span,
+main .contacts-container .contacts-info .about-us-text p span,
+main .contacts-container .contacts-info .delivery-payment-text p span,
+main .contacts-container .contacts-info .contacts-text p span,
+main .contacts-container .registration-info .about-us-text p span,
+main .contacts-container .registration-info .delivery-payment-text p span,
+main .contacts-container .registration-info .contacts-text p span,
+main .registration-container .about-us-info .about-us-text p span,
+main .registration-container .about-us-info .delivery-payment-text p span,
+main .registration-container .about-us-info .contacts-text p span,
+main .registration-container .delivery-payment-info .about-us-text p span,
+main .registration-container .delivery-payment-info .delivery-payment-text p span,
+main .registration-container .delivery-payment-info .contacts-text p span,
+main .registration-container .contacts-info .about-us-text p span,
+main .registration-container .contacts-info .delivery-payment-text p span,
+main .registration-container .contacts-info .contacts-text p span,
+main .registration-container .registration-info .about-us-text p span,
+main .registration-container .registration-info .delivery-payment-text p span,
+main .registration-container .registration-info .contacts-text p span {
+  font-weight: 500;
+}
+main .about-us-container .about-us-info .about-us-text ul,
+main .about-us-container .about-us-info .delivery-payment-text ul,
+main .about-us-container .about-us-info .contacts-text ul,
+main .about-us-container .delivery-payment-info .about-us-text ul,
+main .about-us-container .delivery-payment-info .delivery-payment-text ul,
+main .about-us-container .delivery-payment-info .contacts-text ul,
+main .about-us-container .contacts-info .about-us-text ul,
+main .about-us-container .contacts-info .delivery-payment-text ul,
+main .about-us-container .contacts-info .contacts-text ul,
+main .about-us-container .registration-info .about-us-text ul,
+main .about-us-container .registration-info .delivery-payment-text ul,
+main .about-us-container .registration-info .contacts-text ul,
+main .delivery-payment-container .about-us-info .about-us-text ul,
+main .delivery-payment-container .about-us-info .delivery-payment-text ul,
+main .delivery-payment-container .about-us-info .contacts-text ul,
+main .delivery-payment-container .delivery-payment-info .about-us-text ul,
+main .delivery-payment-container .delivery-payment-info .delivery-payment-text ul,
+main .delivery-payment-container .delivery-payment-info .contacts-text ul,
+main .delivery-payment-container .contacts-info .about-us-text ul,
+main .delivery-payment-container .contacts-info .delivery-payment-text ul,
+main .delivery-payment-container .contacts-info .contacts-text ul,
+main .delivery-payment-container .registration-info .about-us-text ul,
+main .delivery-payment-container .registration-info .delivery-payment-text ul,
+main .delivery-payment-container .registration-info .contacts-text ul,
+main .contacts-container .about-us-info .about-us-text ul,
+main .contacts-container .about-us-info .delivery-payment-text ul,
+main .contacts-container .about-us-info .contacts-text ul,
+main .contacts-container .delivery-payment-info .about-us-text ul,
+main .contacts-container .delivery-payment-info .delivery-payment-text ul,
+main .contacts-container .delivery-payment-info .contacts-text ul,
+main .contacts-container .contacts-info .about-us-text ul,
+main .contacts-container .contacts-info .delivery-payment-text ul,
+main .contacts-container .contacts-info .contacts-text ul,
+main .contacts-container .registration-info .about-us-text ul,
+main .contacts-container .registration-info .delivery-payment-text ul,
+main .contacts-container .registration-info .contacts-text ul,
+main .registration-container .about-us-info .about-us-text ul,
+main .registration-container .about-us-info .delivery-payment-text ul,
+main .registration-container .about-us-info .contacts-text ul,
+main .registration-container .delivery-payment-info .about-us-text ul,
+main .registration-container .delivery-payment-info .delivery-payment-text ul,
+main .registration-container .delivery-payment-info .contacts-text ul,
+main .registration-container .contacts-info .about-us-text ul,
+main .registration-container .contacts-info .delivery-payment-text ul,
+main .registration-container .contacts-info .contacts-text ul,
+main .registration-container .registration-info .about-us-text ul,
+main .registration-container .registration-info .delivery-payment-text ul,
+main .registration-container .registration-info .contacts-text ul {
+  padding-left: 48px;
+  padding-bottom: 8px;
+}
+main .about-us-container .about-us-info .about-us-text ul li,
+main .about-us-container .about-us-info .delivery-payment-text ul li,
+main .about-us-container .about-us-info .contacts-text ul li,
+main .about-us-container .delivery-payment-info .about-us-text ul li,
+main .about-us-container .delivery-payment-info .delivery-payment-text ul li,
+main .about-us-container .delivery-payment-info .contacts-text ul li,
+main .about-us-container .contacts-info .about-us-text ul li,
+main .about-us-container .contacts-info .delivery-payment-text ul li,
+main .about-us-container .contacts-info .contacts-text ul li,
+main .about-us-container .registration-info .about-us-text ul li,
+main .about-us-container .registration-info .delivery-payment-text ul li,
+main .about-us-container .registration-info .contacts-text ul li,
+main .delivery-payment-container .about-us-info .about-us-text ul li,
+main .delivery-payment-container .about-us-info .delivery-payment-text ul li,
+main .delivery-payment-container .about-us-info .contacts-text ul li,
+main .delivery-payment-container .delivery-payment-info .about-us-text ul li,
+main .delivery-payment-container .delivery-payment-info .delivery-payment-text ul li,
+main .delivery-payment-container .delivery-payment-info .contacts-text ul li,
+main .delivery-payment-container .contacts-info .about-us-text ul li,
+main .delivery-payment-container .contacts-info .delivery-payment-text ul li,
+main .delivery-payment-container .contacts-info .contacts-text ul li,
+main .delivery-payment-container .registration-info .about-us-text ul li,
+main .delivery-payment-container .registration-info .delivery-payment-text ul li,
+main .delivery-payment-container .registration-info .contacts-text ul li,
+main .contacts-container .about-us-info .about-us-text ul li,
+main .contacts-container .about-us-info .delivery-payment-text ul li,
+main .contacts-container .about-us-info .contacts-text ul li,
+main .contacts-container .delivery-payment-info .about-us-text ul li,
+main .contacts-container .delivery-payment-info .delivery-payment-text ul li,
+main .contacts-container .delivery-payment-info .contacts-text ul li,
+main .contacts-container .contacts-info .about-us-text ul li,
+main .contacts-container .contacts-info .delivery-payment-text ul li,
+main .contacts-container .contacts-info .contacts-text ul li,
+main .contacts-container .registration-info .about-us-text ul li,
+main .contacts-container .registration-info .delivery-payment-text ul li,
+main .contacts-container .registration-info .contacts-text ul li,
+main .registration-container .about-us-info .about-us-text ul li,
+main .registration-container .about-us-info .delivery-payment-text ul li,
+main .registration-container .about-us-info .contacts-text ul li,
+main .registration-container .delivery-payment-info .about-us-text ul li,
+main .registration-container .delivery-payment-info .delivery-payment-text ul li,
+main .registration-container .delivery-payment-info .contacts-text ul li,
+main .registration-container .contacts-info .about-us-text ul li,
+main .registration-container .contacts-info .delivery-payment-text ul li,
+main .registration-container .contacts-info .contacts-text ul li,
+main .registration-container .registration-info .about-us-text ul li,
+main .registration-container .registration-info .delivery-payment-text ul li,
+main .registration-container .registration-info .contacts-text ul li {
+  line-height: 1.5;
+}
+main .about-us-container .about-us-info .about-us-text ul li span,
+main .about-us-container .about-us-info .delivery-payment-text ul li span,
+main .about-us-container .about-us-info .contacts-text ul li span,
+main .about-us-container .delivery-payment-info .about-us-text ul li span,
+main .about-us-container .delivery-payment-info .delivery-payment-text ul li span,
+main .about-us-container .delivery-payment-info .contacts-text ul li span,
+main .about-us-container .contacts-info .about-us-text ul li span,
+main .about-us-container .contacts-info .delivery-payment-text ul li span,
+main .about-us-container .contacts-info .contacts-text ul li span,
+main .about-us-container .registration-info .about-us-text ul li span,
+main .about-us-container .registration-info .delivery-payment-text ul li span,
+main .about-us-container .registration-info .contacts-text ul li span,
+main .delivery-payment-container .about-us-info .about-us-text ul li span,
+main .delivery-payment-container .about-us-info .delivery-payment-text ul li span,
+main .delivery-payment-container .about-us-info .contacts-text ul li span,
+main .delivery-payment-container .delivery-payment-info .about-us-text ul li span,
+main .delivery-payment-container .delivery-payment-info .delivery-payment-text ul li span,
+main .delivery-payment-container .delivery-payment-info .contacts-text ul li span,
+main .delivery-payment-container .contacts-info .about-us-text ul li span,
+main .delivery-payment-container .contacts-info .delivery-payment-text ul li span,
+main .delivery-payment-container .contacts-info .contacts-text ul li span,
+main .delivery-payment-container .registration-info .about-us-text ul li span,
+main .delivery-payment-container .registration-info .delivery-payment-text ul li span,
+main .delivery-payment-container .registration-info .contacts-text ul li span,
+main .contacts-container .about-us-info .about-us-text ul li span,
+main .contacts-container .about-us-info .delivery-payment-text ul li span,
+main .contacts-container .about-us-info .contacts-text ul li span,
+main .contacts-container .delivery-payment-info .about-us-text ul li span,
+main .contacts-container .delivery-payment-info .delivery-payment-text ul li span,
+main .contacts-container .delivery-payment-info .contacts-text ul li span,
+main .contacts-container .contacts-info .about-us-text ul li span,
+main .contacts-container .contacts-info .delivery-payment-text ul li span,
+main .contacts-container .contacts-info .contacts-text ul li span,
+main .contacts-container .registration-info .about-us-text ul li span,
+main .contacts-container .registration-info .delivery-payment-text ul li span,
+main .contacts-container .registration-info .contacts-text ul li span,
+main .registration-container .about-us-info .about-us-text ul li span,
+main .registration-container .about-us-info .delivery-payment-text ul li span,
+main .registration-container .about-us-info .contacts-text ul li span,
+main .registration-container .delivery-payment-info .about-us-text ul li span,
+main .registration-container .delivery-payment-info .delivery-payment-text ul li span,
+main .registration-container .delivery-payment-info .contacts-text ul li span,
+main .registration-container .contacts-info .about-us-text ul li span,
+main .registration-container .contacts-info .delivery-payment-text ul li span,
+main .registration-container .contacts-info .contacts-text ul li span,
+main .registration-container .registration-info .about-us-text ul li span,
+main .registration-container .registration-info .delivery-payment-text ul li span,
+main .registration-container .registration-info .contacts-text ul li span {
+  font-weight: 500;
+}
+main .about-us-container .about-us-info iframe,
+main .about-us-container .delivery-payment-info iframe,
+main .about-us-container .contacts-info iframe,
+main .about-us-container .registration-info iframe,
+main .delivery-payment-container .about-us-info iframe,
+main .delivery-payment-container .delivery-payment-info iframe,
+main .delivery-payment-container .contacts-info iframe,
+main .delivery-payment-container .registration-info iframe,
+main .contacts-container .about-us-info iframe,
+main .contacts-container .delivery-payment-info iframe,
+main .contacts-container .contacts-info iframe,
+main .contacts-container .registration-info iframe,
+main .registration-container .about-us-info iframe,
+main .registration-container .delivery-payment-info iframe,
+main .registration-container .contacts-info iframe,
+main .registration-container .registration-info iframe {
+  margin-top: 8px;
+  width: 100%;
+}
+main .about-us-container .registration-info,
+main .delivery-payment-container .registration-info,
+main .contacts-container .registration-info,
+main .registration-container .registration-info {
+  display: flex;
+}
+main .about-us-container .registration-info .registrtion-info-column,
+main .delivery-payment-container .registration-info .registrtion-info-column,
+main .contacts-container .registration-info .registrtion-info-column,
+main .registration-container .registration-info .registrtion-info-column {
+  width: 50%;
+}
+main .about-us-container .registration-info .registrtion-info-column .registrtion-heading,
+main .delivery-payment-container .registration-info .registrtion-info-column .registrtion-heading,
+main .contacts-container .registration-info .registrtion-info-column .registrtion-heading,
+main .registration-container .registration-info .registrtion-info-column .registrtion-heading {
+  font-size: 28px;
+  color: #444;
+  font-weight: 400;
+  padding-bottom: 40px;
+}
+main .about-us-container .registration-info .registrtion-info-column form .registration-email,
+main .about-us-container .registration-info .registrtion-info-column form .registration-tel,
+main .delivery-payment-container .registration-info .registrtion-info-column form .registration-email,
+main .delivery-payment-container .registration-info .registrtion-info-column form .registration-tel,
+main .contacts-container .registration-info .registrtion-info-column form .registration-email,
+main .contacts-container .registration-info .registrtion-info-column form .registration-tel,
+main .registration-container .registration-info .registrtion-info-column form .registration-email,
+main .registration-container .registration-info .registrtion-info-column form .registration-tel {
+  display: flex;
+  border-bottom: 1px solid #888;
+  width: 80%;
+  position: relative;
+  padding-top: 16px;
+}
+main .about-us-container .registration-info .registrtion-info-column form .registration-email input,
+main .about-us-container .registration-info .registrtion-info-column form .registration-tel input,
+main .delivery-payment-container .registration-info .registrtion-info-column form .registration-email input,
+main .delivery-payment-container .registration-info .registrtion-info-column form .registration-tel input,
+main .contacts-container .registration-info .registrtion-info-column form .registration-email input,
+main .contacts-container .registration-info .registrtion-info-column form .registration-tel input,
+main .registration-container .registration-info .registrtion-info-column form .registration-email input,
+main .registration-container .registration-info .registrtion-info-column form .registration-tel input {
+  width: 100%;
+  font-size: 18px;
+  outline: none;
+  height: 30px;
+  padding: 16px 0;
+}
+main .about-us-container .registration-info .registrtion-info-column form .registration-email .moving-inscription,
+main .about-us-container .registration-info .registrtion-info-column form .registration-tel .moving-inscription,
+main .delivery-payment-container .registration-info .registrtion-info-column form .registration-email .moving-inscription,
+main .delivery-payment-container .registration-info .registrtion-info-column form .registration-tel .moving-inscription,
+main .contacts-container .registration-info .registrtion-info-column form .registration-email .moving-inscription,
+main .contacts-container .registration-info .registrtion-info-column form .registration-tel .moving-inscription,
+main .registration-container .registration-info .registrtion-info-column form .registration-email .moving-inscription,
+main .registration-container .registration-info .registrtion-info-column form .registration-tel .moving-inscription {
+  position: absolute;
+  z-index: 1;
+}
+main .about-us-container .registration-info .registrtion-info-column form .registration-email input:hover,
+main .about-us-container .registration-info .registrtion-info-column form .registration-email input:focus,
+main .about-us-container .registration-info .registrtion-info-column form .registration-email label:hover,
+main .about-us-container .registration-info .registrtion-info-column form .registration-tel input:hover,
+main .about-us-container .registration-info .registrtion-info-column form .registration-tel input:focus,
+main .about-us-container .registration-info .registrtion-info-column form .registration-tel label:hover,
+main .delivery-payment-container .registration-info .registrtion-info-column form .registration-email input:hover,
+main .delivery-payment-container .registration-info .registrtion-info-column form .registration-email input:focus,
+main .delivery-payment-container .registration-info .registrtion-info-column form .registration-email label:hover,
+main .delivery-payment-container .registration-info .registrtion-info-column form .registration-tel input:hover,
+main .delivery-payment-container .registration-info .registrtion-info-column form .registration-tel input:focus,
+main .delivery-payment-container .registration-info .registrtion-info-column form .registration-tel label:hover,
+main .contacts-container .registration-info .registrtion-info-column form .registration-email input:hover,
+main .contacts-container .registration-info .registrtion-info-column form .registration-email input:focus,
+main .contacts-container .registration-info .registrtion-info-column form .registration-email label:hover,
+main .contacts-container .registration-info .registrtion-info-column form .registration-tel input:hover,
+main .contacts-container .registration-info .registrtion-info-column form .registration-tel input:focus,
+main .contacts-container .registration-info .registrtion-info-column form .registration-tel label:hover,
+main .registration-container .registration-info .registrtion-info-column form .registration-email input:hover,
+main .registration-container .registration-info .registrtion-info-column form .registration-email input:focus,
+main .registration-container .registration-info .registrtion-info-column form .registration-email label:hover,
+main .registration-container .registration-info .registrtion-info-column form .registration-tel input:hover,
+main .registration-container .registration-info .registrtion-info-column form .registration-tel input:focus,
+main .registration-container .registration-info .registrtion-info-column form .registration-tel label:hover {
+  cursor: text;
+}
+main .about-us-container .registration-info .registrtion-info-column form .registration-email input:focus,
+main .about-us-container .registration-info .registrtion-info-column form .registration-tel input:focus,
+main .delivery-payment-container .registration-info .registrtion-info-column form .registration-email input:focus,
+main .delivery-payment-container .registration-info .registrtion-info-column form .registration-tel input:focus,
+main .contacts-container .registration-info .registrtion-info-column form .registration-email input:focus,
+main .contacts-container .registration-info .registrtion-info-column form .registration-tel input:focus,
+main .registration-container .registration-info .registrtion-info-column form .registration-email input:focus,
+main .registration-container .registration-info .registrtion-info-column form .registration-tel input:focus {
+  z-index: 99;
+}
+main .about-us-container .registration-info .registrtion-info-column form .registration-email input:focus + .moving-inscription,
+main .about-us-container .registration-info .registrtion-info-column form .registration-email input:not(:invalid) + .moving-inscription,
+main .about-us-container .registration-info .registrtion-info-column form .registration-tel input:focus + .moving-inscription,
+main .about-us-container .registration-info .registrtion-info-column form .registration-tel input:not(:invalid) + .moving-inscription,
+main .delivery-payment-container .registration-info .registrtion-info-column form .registration-email input:focus + .moving-inscription,
+main .delivery-payment-container .registration-info .registrtion-info-column form .registration-email input:not(:invalid) + .moving-inscription,
+main .delivery-payment-container .registration-info .registrtion-info-column form .registration-tel input:focus + .moving-inscription,
+main .delivery-payment-container .registration-info .registrtion-info-column form .registration-tel input:not(:invalid) + .moving-inscription,
+main .contacts-container .registration-info .registrtion-info-column form .registration-email input:focus + .moving-inscription,
+main .contacts-container .registration-info .registrtion-info-column form .registration-email input:not(:invalid) + .moving-inscription,
+main .contacts-container .registration-info .registrtion-info-column form .registration-tel input:focus + .moving-inscription,
+main .contacts-container .registration-info .registrtion-info-column form .registration-tel input:not(:invalid) + .moving-inscription,
+main .registration-container .registration-info .registrtion-info-column form .registration-email input:focus + .moving-inscription,
+main .registration-container .registration-info .registrtion-info-column form .registration-email input:not(:invalid) + .moving-inscription,
+main .registration-container .registration-info .registrtion-info-column form .registration-tel input:focus + .moving-inscription,
+main .registration-container .registration-info .registrtion-info-column form .registration-tel input:not(:invalid) + .moving-inscription {
+  top: -35%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+main .about-us-container .registration-info .registrtion-info-column form .registration-email label i,
+main .about-us-container .registration-info .registrtion-info-column form .registration-tel label i,
+main .delivery-payment-container .registration-info .registrtion-info-column form .registration-email label i,
+main .delivery-payment-container .registration-info .registrtion-info-column form .registration-tel label i,
+main .contacts-container .registration-info .registrtion-info-column form .registration-email label i,
+main .contacts-container .registration-info .registrtion-info-column form .registration-tel label i,
+main .registration-container .registration-info .registrtion-info-column form .registration-email label i,
+main .registration-container .registration-info .registrtion-info-column form .registration-tel label i {
+  padding-top: 4px;
+  padding-right: 16px;
+  padding-left: 8px;
+}
+main .about-us-container .registration-info .registrtion-info-column .registration-tel,
+main .delivery-payment-container .registration-info .registrtion-info-column .registration-tel,
+main .contacts-container .registration-info .registrtion-info-column .registration-tel,
+main .registration-container .registration-info .registrtion-info-column .registration-tel {
+  margin-top: 30px;
+}
+main .about-us-container .registration-info:last-child .registration-info-box,
+main .delivery-payment-container .registration-info:last-child .registration-info-box,
+main .contacts-container .registration-info:last-child .registration-info-box,
+main .registration-container .registration-info:last-child .registration-info-box {
+  margin-top: 200px;
+  background-color: #444;
+  height: 100px;
+}
+main .mt {
+  margin-top: 80px;
+}
+main .mb {
+  margin-bottom: 80px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #F6F6F6;
+  padding-bottom: 80px;
+}
+footer .footer-info-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-info-container .column {
+  width: 25%;
+  padding-right: 16px;
+  display: flex;
+  justify-content: center;
+}
+footer .footer-info-container .column .privacy-box img {
+  padding-top: 48px;
+  padding-bottom: 18px;
+}
+footer .footer-info-container .column .privacy-box p {
+  line-height: 2.5;
+  font-size: 14px;
+  color: #444;
+}
+footer .footer-info-container .column .privacy-box p a {
+  line-height: 2;
+  color: #444;
+  text-decoration: none;
+}
+footer .footer-info-container .column .privacy-box p a:hover {
+  text-decoration: underline;
+}
+footer .footer-info-container .column .privacy-box .small-font {
+  padding-top: 16px;
+  line-height: 1.5;
+  font-size: 12px;
+  color: #444;
+}
+footer .footer-info-container .column ul {
+  list-style: none;
+}
+footer .footer-info-container .column ul p {
+  padding-top: 48px;
+  font-size: 22px;
+  color: #444;
+  padding-bottom: 12px;
+}
+footer .footer-info-container .column ul li {
+  padding-top: 12px;
+  font-size: 17px;
+  color: #444;
+  font-weight: 100;
+}
+footer .footer-info-container .column ul li a {
+  text-decoration: none;
+  color: #444;
+}
+footer .footer-info-container .column ul li a:hover {
+  text-decoration: underline;
+}
+footer .footer-info-container .column .social-network-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-right: 30px;
+}
+footer .footer-info-container .column .social-network-container .social-network {
+  width: 16px;
+  height: 16px;
+}
+footer .footer-info-container .column .social-network-container .social-network a {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  float: left;
+  background: #f6f6f6;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 24px;
+  font-size: 12px;
+  padding: 6px;
+  color: #444;
+}
+footer .footer-info-container .column .social-network-container .social-network:hover a {
+  color: #fff;
+  background: #444;
+  border: 1px solid #444;
+}
+footer .footer-info-container .column .social-network-container .social-nework:hover {
+  border-radius: 1px solid F6F6F6;
+}
+
+/*# sourceMappingURL=styles.css.map */
