@@ -1,0 +1,103 @@
+@import '_reset';
+
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .box {
+        width: 300px;
+        position: relative;
+        padding: 24px;
+        border: 2px solid #00a700;
+        border-radius: 6px;
+        background-color: #f6f6f6;
+
+        .unvisible-box {
+            position: absolute;
+            width: inherit;
+            height: 400px;
+            top: -21px;
+            left: 21px;
+            overflow: hidden;
+            
+
+            .ribbon-box {
+                position: absolute;
+                left: 148px;
+                top: 43px;
+                right: -60px;
+                background-color: #f00;
+                transform: rotate(45deg);
+                padding: 8px 60px;
+                z-index: 2;
+                box-shadow: 10px 7px 15px -5px #666;
+                
+                p {
+                    font-size: 20px;
+                    color: #fff;
+                    font-weight: bold;
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 40px;
+                height: 20px;
+                top: 103px;
+                height: 50px;
+                right: 0;
+                background-color: #5f0000;
+                transform: rotate(45deg);
+                z-index: -1;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 40px;
+                height: 20px;
+                top: 0;
+                height: 40px;
+                right:106px;
+                background-color: #5f0000;
+                transform: rotate(45deg);
+                z-index: -1;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .card-text {
+            overflow: hidden;
+        }
+
+        .card-action {
+            padding-top: 16px;
+            
+            button {
+                width: 100%;
+                padding: 8px 32px;
+                border-radius: 4px;
+                background-color: #00a700;
+                border: 1px solid #00a700;
+                color: #fff;
+                font-weight: bold;
+
+                &:hover {
+                    background-color: #fff;
+                    color: #00a700;
+                    cursor: pointer;
+                }
+            }
+
+
+        }
+
+    }
+}
