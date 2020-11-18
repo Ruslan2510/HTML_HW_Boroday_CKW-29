@@ -1,0 +1,254 @@
+@media only screen and(max-width: 550px) {
+    
+
+    header {
+
+        .bottom-menu {
+            
+            .navigation-container {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .company-logo-container {
+                    width: 90%;
+                }
+
+                .search-container {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .menu-trigger {
+                        display: block;
+
+                        i { 
+                            font-size: 32px;
+                        }
+                    }
+
+                    #menu-trigger {
+
+                        &:checked + .navigation {
+                            display: none;
+                        }
+                    }
+
+                    .navigation {
+                        margin-left: 0;
+                        width: 100%;
+                        justify-content: flex-start;
+                        flex-direction: column;
+                        margin-bottom: 16px;
+
+                        a {
+                            width: 100%;
+                            color: $title-font;
+                            padding: 8px 32px;
+                            background-color: $white-color;
+                            color: #21213F;
+                            border-bottom: 1px solid $title-font;
+
+                            &:first-child {
+                                border-top: 1px solid $title-font;
+                            }
+                        }
+                    }
+
+                    .search {
+                        width: 90%;
+                        position: relative;
+
+                        .catalog-button {
+                            padding-bottom: 11.5px;
+                            padding-top: 12px;
+                            border-radius: 4px 0 0 4px;
+            
+                            p {
+                                display: none;
+                            }
+                        }
+
+                        .dropdown-list {
+                            top: 75px;
+                            left: 0;
+                        }
+
+                        .search-input {
+                            width: 100%;
+                            border-radius: 0;
+                            margin: 0;
+                        }
+
+                        .search-button {
+                            padding-top: 7px;
+                            border-radius: 0 4px 4px 0;
+                        }
+                    }
+                }
+
+                .ordering-container {                
+
+                    .tel-container {
+                    display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+
+        .main-content {
+
+            .cards-container {
+
+                .card {
+                    width: 100%;
+                }
+            }
+        }
+
+        .news {
+
+            .news-container {
+
+                .news-boxes-container {
+
+                    flex-direction: column;
+                }
+            }
+        }
+
+        .about-us-container,
+        .delivery-payment-container,
+        .contacts-container,
+        .registration-container,
+        .enter-container,
+        .laptop-page-container {
+
+            .laptop-page-info { 
+
+                .laptop-page-column {
+                    margin-bottom: 20px;
+                    flex-direction: column;
+
+                    .mt {
+                        margin-top: 0;
+                    }
+
+                    .swipper {
+                        display: flex;
+                        margin-top: 0;
+                        
+
+                        img {
+                            margin-bottom: 0;
+                        }
+                        
+                    }
+                        
+                    .laptop-img-container {
+
+                        img {
+                            margin-bottom: 0;
+                        }
+                    }    
+
+                    .laptop-item-price {
+
+                        .laptop-amount,
+                        .laptop-cost-container,
+                        .laptop-total-price-container {
+                            width: 50%;
+
+                            &:nth-child(1) {
+                                width: 100%;
+                            }
+                        }
+
+                        .laptop-cost-container {
+
+                            p {
+                                text-align: start;
+                            }
+                        }
+                    }
+
+                    
+                    .laptop-buy-button {
+                        text-align: center;
+                    }
+                }
+
+                .laptop-description-container {
+
+                    .laptop-description-specifications-tab {
+
+                        .description-text,
+                        .specifications-text {
+                            font-size: 14px;
+                        }
+
+                        .specifications-text {
+                            font-size: 14px;
+                        }                    
+                    }
+                }
+
+                .laptop-recommendations {
+                    
+                    .card {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+
+        .footer-info-container {
+            flex-direction: column;
+
+            .column {
+                width: 100%;
+                margin-right: 0;
+                padding-right: 0;
+
+                .column-heading {
+                    width: 100%;
+
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        
+                        p {
+                            width: 100%;
+                        }
+        
+                        li {
+
+                            list-style: disc;
+                            list-style-position: inside;
+                        }
+                    }
+                }
+
+                &:nth-child(4) {
+
+                    ul {
+
+                        li {
+                            width: 100%;
+                            list-style: none;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}

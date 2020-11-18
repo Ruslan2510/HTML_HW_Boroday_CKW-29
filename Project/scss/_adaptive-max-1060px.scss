@@ -1,0 +1,105 @@
+@media only screen and(max-width: 1060px) {
+    
+    header {
+    
+        .bottom-menu {
+            
+            .navigation-container {
+    
+                .search-container {
+                    
+                    .navigation {
+    
+                        &:first-child {
+                            padding-left: 8px;
+                        }
+                    }
+
+                    .search {
+
+                        .dropdown-list {
+                            top: 204px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    main {
+    
+        .main-content {
+    
+            .cards-container {
+    
+                .card {
+                    width: calc(100%/3 - 20px);
+                }
+            }
+        }
+    
+        .about-us-container,
+        .delivery-payment-container,
+        .contacts-container,
+        .registration-container,
+        .enter-container,
+        .laptop-page-container {
+
+            .laptop-page-info { 
+    
+                .laptop-page-column {
+    
+                    .laptop-item-price {
+                        flex-wrap: wrap;
+    
+                        .laptop-amount,
+                        .laptop-cost-container,
+                        .laptop-total-price-container {
+                            
+                            &:first-child {
+                                width: 100%;
+                            }
+    
+                            p {
+                                padding-top: 12px;
+                                padding-bottom: 8px;
+                            }
+        
+                            .count-widget {
+        
+                                .button-minus,
+                                .button-plus {
+                                    padding-bottom: 6px;
+                                }
+                            }
+    
+                            .laptop-cost,
+                            .laptop-total-price {
+                                @include font-style-color(22px);
+                            }
+    
+                            &:nth-child(2) {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+    
+                    &:nth-child(2) {
+                        padding-bottom: 300px;
+                    }
+                }
+    
+                .laptop-description-container {
+    
+                    .laptop-description-specifications-tab {
+
+                        label {
+                            width: 50%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}

@@ -1,0 +1,28 @@
+@media only screen and(max-width: 1200px) {
+
+    main {
+        
+        .main-content {
+            
+            .cards-container {
+
+                .card {
+                    width: calc(100%/3 - 20px);
+                }
+            }
+        }
+
+        .laptop-page-container {
+
+            .laptop-page-info { 
+    
+                .laptop-recommendations {
+    
+                    .card {
+                        width: calc(100%/3 - 20px);
+                    }
+                }
+            }
+        }
+    }
+}

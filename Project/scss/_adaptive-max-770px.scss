@@ -1,0 +1,153 @@
+@media only screen and(max-width: 770px) {
+    
+
+    header {
+
+        .bottom-menu {
+            
+            .navigation-container {
+
+                .search-container {
+
+                    .navigation {
+                        padding: 0;
+                        margin-left: 0;
+
+                        a {
+                            margin-left: 0;
+                            font-size: 16px;
+                            padding: 0;
+
+                            &:focus {
+                                background-color: #21213F;
+                                color: $white-color;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .search {
+                            
+                        .search-input {
+                            margin: 0 8px;
+                        }
+
+                        .dropdown-list {
+                            top: 214px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+
+        .main-content {
+
+            .cards-container {
+
+                .card {
+                    width: calc(100%/2 - 20px);
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .about-us-container,
+        .delivery-payment-container,
+        .contacts-container,
+        .registration-container,
+        .enter-container,
+        .laptop-page-container {
+
+            .laptop-page-info { 
+
+                .laptop-page-column {
+
+                    .laptop-item-price {
+
+                        .laptop-amount,
+                        .laptop-cost-container,
+                        .laptop-total-price-container {
+
+                            .laptop-cost,
+                            .laptop-total-price {
+                                padding-top: 4px;
+                            }
+                        }
+                    }
+                }
+
+                .laptop-recommendations {
+                    
+                    .card {
+                        width: calc(100%/2 - 20px);
+                    }
+                }
+            }
+
+            .registration-info,
+            .enter-info {
+                justify-content: center;
+                flex-direction: column;
+
+                .registrtion-info-column,
+                .enter-info-column {
+
+                    form {
+
+                        .registration-email,
+                        .registration-tel,
+                        .registration-password,
+                        .registration-confirm-password,
+                        .enter-email-login,
+                        .enter-password {
+                            width: 100%;
+                        }
+
+                        .registration-button,
+                        .enter-button {
+                            width: 100%;
+                        }
+                    }
+
+                }
+
+                &:last-child {
+
+                    .registration-info-box,
+                    .enter-info-box {
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+
+        .footer-info-container {
+
+            .column {
+
+                .social-network-container {
+                    justify-content: space-between;
+                    padding-top: 20px;
+
+                    .social-network {
+                        width: 50px;
+                        height: 50px;
+
+                        a {
+                            width: 50px;
+                            height: 50px;
+                            padding: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
