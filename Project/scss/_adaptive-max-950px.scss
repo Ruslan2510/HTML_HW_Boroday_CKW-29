@@ -1,0 +1,270 @@
+@media only screen and(max-width: 950px) {
+
+
+    header {
+
+        .menu-info {
+
+            .top-menu-info {
+                padding: 4px 0;
+                width: 90%;
+
+                .company-email-container {
+
+                    a {
+                        //text-decoration: none;
+                        p {
+                            @include top-menu-font(14px);
+                        }
+                    }
+
+                    i {
+                        @include font-style-size-padding(16px , 8px);
+                        padding-top: 2px;
+                    }
+                }
+
+                .sign-up-container {
+
+                    p {
+                        @include top-menu-font(14px);
+                    }
+
+                    i {
+                        padding-top: 2px;
+                    }
+                }
+            }
+        }
+
+        .bottom-menu {
+            background-color: #F6F6F6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .navigation-container {
+                width: 90%;
+                display: block;
+
+                .company-logo-container {
+
+                    p {
+                        display: none;
+                    }
+                }
+
+                .search-container {
+                    
+                    .navigation {
+                        justify-content: center;
+
+                        a {
+                            padding: 8px 32px;
+
+                            &:not(:last-child) {
+                                padding-right: 16px;
+                            }
+                        }
+                    }
+
+                    .search {
+                        margin-left: 0;
+
+                        .dropdown-list {
+                            top: 236px;
+                            left: 5%;
+                        }
+
+                        .search-input {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .ordering-container {
+                    position: absolute;
+                    right: 7%;
+                    top: 70px;
+                    display: flex;
+                    flex-direction: row-reverse;
+
+                    .icons-container {
+
+                        .list-icon-container,
+                        .cart-icon-container {
+                            padding-top: 4px;
+
+                            p {
+                                display: none;
+                            }
+                        }
+                    }
+                    
+                    .tel-container {
+                        padding-top: 0;
+                        padding-right: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+
+        .main-content {
+
+            .cards-container {
+                width: 90%;
+
+                .card {
+                    margin: 0 8px;
+                    margin-bottom: 60px;
+                }
+            }
+        }
+
+        .news {
+
+            .news-container {
+                width: 90%;
+
+                .news-boxes-container {
+
+                    .news-box {
+                        display: inline;
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        .tech-info {
+
+            .tech-info-container {
+                width: 90%;
+            }
+        }
+
+        .about-us-container,
+        .delivery-payment-container,
+        .contacts-container,
+        .registration-container,
+        .enter-container,
+        .laptop-page-container {
+
+            .about-us-info,
+            .delivery-payment-info,
+            .contacts-info,
+            .registration-info,
+            .enter-info,
+            .laptop-page-info {
+                width: 90%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .laptop-page-info { 
+
+                .laptop-page-column {
+                    width: 100%;
+
+                    .laptop-item-price {
+
+                        .laptop-amount,
+                        .laptop-cost-container,
+                        .laptop-total-price-container {
+                            
+                            width: 33%;
+
+                            &:nth-child(1) {
+                                width: 33%;
+                            }
+
+                            .laptop-cost,
+                            .laptop-total-price {
+                                padding-top: 0;
+
+                                p {
+                                    padding-top: 0;
+                                }
+                            }
+
+                            &:nth-child(2),
+                            &:nth-child(3) {
+                                margin-left: 0;
+                            }
+                        }
+
+                        .laptop-cost-container {
+                            p {
+                                text-align: center;
+                            }
+                        }
+                        
+                        .laptop-total-price-container {
+
+                            p {
+                                text-align: end;
+                            }
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        padding-bottom: 0;
+                        margin-bottom: 0;
+                    }
+                }
+
+                .laptop-recommendations {
+                    
+                    .card {
+                        margin: 0 8px;
+                        margin-bottom: 60px;
+                    }
+                }
+            }
+
+            .registration-info,
+            .enter-info {
+
+                .registrtion-info-column,
+                .enter-info-column {
+                    width: 100%;
+
+                    &:last-child {
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+
+        .footer-info-container {
+            width: 90%;
+            justify-content: space-around;
+
+            .column {
+
+                .social-network-container {
+
+                    .social-network {
+                        margin-top: 4px;
+                    }
+                }
+
+                &:nth-child(3) {
+                    display: none;
+                }    
+            }
+        }
+    }
+}
