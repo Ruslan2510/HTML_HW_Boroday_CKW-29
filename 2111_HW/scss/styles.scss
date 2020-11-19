@@ -1,0 +1,223 @@
+@import '_reset';
+
+
+header {
+    margin: 30px 0;
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        p {
+            font-size: 28px;
+            padding: 8px 32px;
+
+            a {
+                color: #333;
+                text-decoration: none;
+
+                &:focus {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+main {
+
+    section {
+        border: 1px solid #333;
+        height: 300px;
+
+        &:nth-child(even) {
+
+            img {
+                width: 300px;
+    
+                float: right;
+            }
+        }
+
+        &:nth-child(odd) {
+
+            img {
+                width: 300px;
+    
+                float: left;
+            }
+        }
+
+        p {
+
+            padding: 8px 16px;
+            
+            span {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .plane-tickets-conatainer {
+        background-image: url(../img/plane-tickets.jpg);
+        background-color: #333;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        form {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 60px 0;
+            width: fit-content;
+
+            h2 {
+                text-align: center;
+            }
+
+            .departure-place-container,
+            .arrival-place-container,
+            .departure-date-container,
+            .arrival-date-container,
+            .passangers-amount-container {
+                padding: 8px 0;
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+
+                label {
+                    margin: 4px 0;
+                    font-size: 20px;
+                }
+
+                input,
+                select {
+                    font-size: 16px;
+                    padding: 4px 0;
+                }
+            }
+
+            button {
+                padding: 8px 16px;
+                font-size: 20px;
+                border-radius: 8px;
+                margin-top: 8px;
+                width: 100%;
+                background: linear-gradient(21deg, #5611ec, #dd03e4);
+                color: #fff;
+                outline: none;
+
+                &:hover {
+                    background: linear-gradient(21deg, #dd03e4, #5611ec);
+                    cursor: pointer;
+                }
+
+                &:focus {
+                    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                }
+            }
+        }
+    }
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .card {
+            margin: 0 4px;
+            width: 270px;
+            background-color: #fff;
+            border-radius: 6px;
+            box-shadow: 0 4px 20px #cdc;
+            transition: .3s all;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            padding-bottom: 24px;
+            margin: 60px 0;
+            position: relative;
+
+            .recommend-block {
+                position: absolute;
+                color: #fff;
+                font-size: 12px;
+                background-color: #444482;
+                padding: 4px 8px;
+                top: 20px;
+                left:20px;
+                border-radius: 4px;
+                z-index: 1;
+                opacity: 0.5;
+
+                &:hover {
+                    opacity: 1;
+                    cursor: pointer;
+                }
+            }
+
+            .img-container {
+                position: relative;
+                padding: 16px;
+
+                img {
+                    width: 100%; 
+                }
+
+                &:hover .block {
+                    display: block;
+                    cursor: pointer;
+                }
+            }
+
+            .block {
+                content: '';
+                position: absolute;
+                left: 16px;
+                bottom: 16px;
+                right: 16px;
+                top: 16px;
+                background :#636363b3;
+                opacity: 0.15;
+                border-radius: 6px;
+                display: none;
+            }
+
+            .description {
+                padding: 8px 20px;
+                text-align: start;
+                width: fit-content;
+
+                a {
+                    text-decoration: none;
+                    font-size: 16px;
+                    color: #333;
+
+                    span {
+                        display: block;
+                    }
+                
+                    &:hover {
+                        color: #ff8826;
+                    }
+                }
+            }
+
+            .price {
+                font-size: 18px;
+                color: #555;
+                font-weight: bold;
+                padding: 8px 20px;
+            }
+
+            &:hover {
+                box-shadow: none;
+            }
+        }
+    }
+}
