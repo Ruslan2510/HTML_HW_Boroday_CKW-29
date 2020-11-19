@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>21.11</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <p><a href="#csharp">C#</a></p>
+            <p><a href="#cplusplus">C++</a></p>
+            <p><a href="#java">Java</a></p>
+            <p><a href="#php">PHP</a></p>
+            <p><a href="#python">Python</a></p>
+        </nav>
+    </header>
+
+    <main>
+        <section class="csharp-container">
+            <img src="img/csharp-logo.png" alt="csharp-logo" id="csharp">
+            <p>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex debitis soluta labore excepturi ab. Ex.</span>
+                <span>Quibusdam eligendi sed maxime, delectus similique magni suscipit corporis doloribus consequuntur dolorem atque hic accusamus.</span>
+                <span>Iusto veniam aperiam repellat officia porro? Ipsam dicta esse quos quidem mollitia excepturi dolore praesentium.</span>
+                <span>Impedit minus consequuntur incidunt error placeat corrupti, dolores sed asperiores necessitatibus explicabo maiores provident dolore.</span>
+            </p>
+        </section>
+        <section class="cplusplus-container">
+            <img src="img/cplusplus-logo.png" alt="cplusplus-logo" id="cplusplus">
+            <p>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex debitis soluta labore excepturi ab. Ex.</span>
+                <span>Quibusdam eligendi sed maxime, delectus similique magni suscipit corporis doloribus consequuntur dolorem atque hic accusamus.</span>
+                <span>Iusto veniam aperiam repellat officia porro? Ipsam dicta esse quos quidem mollitia excepturi dolore praesentium.</span>
+                <span>Impedit minus consequuntur incidunt error placeat corrupti, dolores sed asperiores necessitatibus explicabo maiores provident dolore.</span>
+            </p>
+        </section>
+        <section class="java-container">
+            <img src="img/java-logo.png" alt="java-logo" id="java">
+            <p>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex debitis soluta labore excepturi ab. Ex.</span>
+                <span>Quibusdam eligendi sed maxime, delectus similique magni suscipit corporis doloribus consequuntur dolorem atque hic accusamus.</span>
+                <span>Iusto veniam aperiam repellat officia porro? Ipsam dicta esse quos quidem mollitia excepturi dolore praesentium.</span>
+                <span>Impedit minus consequuntur incidunt error placeat corrupti, dolores sed asperiores necessitatibus explicabo maiores provident dolore.</span>
+            </p>
+        </section>
+        <section class="php-container">
+            <img src="img/php-logo.png" alt="php-logo" id="php">
+            <p>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex debitis soluta labore excepturi ab. Ex.</span>
+                <span>Quibusdam eligendi sed maxime, delectus similique magni suscipit corporis doloribus consequuntur dolorem atque hic accusamus.</span>
+                <span>Iusto veniam aperiam repellat officia porro? Ipsam dicta esse quos quidem mollitia excepturi dolore praesentium.</span>
+                <span>Impedit minus consequuntur incidunt error placeat corrupti, dolores sed asperiores necessitatibus explicabo maiores provident dolore.</span>
+            </p>
+        </section>
+        <section class="python-container">
+            <img src="img/python-logo.png" alt="python-logo" id="python">
+            <p>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex debitis soluta labore excepturi ab. Ex.</span>
+                <span>Quibusdam eligendi sed maxime, delectus similique magni suscipit corporis doloribus consequuntur dolorem atque hic accusamus.</span>
+                <span>Iusto veniam aperiam repellat officia porro? Ipsam dicta esse quos quidem mollitia excepturi dolore praesentium.</span>
+                <span>Impedit minus consequuntur incidunt error placeat corrupti, dolores sed asperiores necessitatibus explicabo maiores provident dolore.</span>
+            </p>
+        </section>
+
+        <div class="plane-tickets-conatainer">
+            <form>
+                <h2>Заказ билетов</h2>
+                <div class="departure-place-container">
+                    <label for="departure-place">Откуда</label>
+                    <select name="departure-place" id="departure-place" placeholder="Откуда">
+                        <option selected disabled hidden>Ничего не выбрано</option>
+                        <option>Киев</option>
+                        <option>Москва</option>
+                        <option>Лондон</option>
+                    </select>
+                </div>
+
+                <div class="arrival-place-container">
+                    <label for="arrival-place">Куда</label>
+                    <select name="arrival-place" id="arrival-place">
+                        <option selected disabled hidden>Ничего не выбрано</option>
+                        <option>Киев</option>
+                        <option>Москва</option>
+                        <option>Лондон</option>
+                    </select>
+                </div>
+
+                <div class="departure-date-container">
+                    <label for="departure-date">Дата вылета</label>
+                    <input type="date" id="departure-date">
+                </div>
+
+                <div class="arrival-date-container">
+                    <label for="arrival-date">Обратно</label>
+                    <input type="date" id="arrival-date">
+                </div>
+
+                <div class="passangers-amount-container">
+                    <label for="passangers-amount">Кол-во пассажиров</label>
+                    <input type="number" min="0" id="passangers-amount" placeholder="0">
+                </div>
+
+                <button>
+                    <p>Найти билеты</p>
+                </button>
+            </form>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="recommend-block">
+                    <p>Акция 50%</p>
+                </div>
+                <div class="img-container">
+                    <img src="img/card1.png" alt="laptop">
+                    <div class="block">
+                    </div>
+                </div>
+                <div class="description">
+                    <a href="#"><span>Ноутбук-трансформер ASUS</span><span>VivoBook Flip</span></a>
+                </div>
+                <div class="price">
+                    <p>25390.00 грн.</p>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>    
+
+    </footer>
+</body>
+</html>

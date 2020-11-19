@@ -1,0 +1,200 @@
+/*Global reset*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin: 30px 0;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav p {
+  font-size: 28px;
+  padding: 8px 32px;
+}
+header nav p a {
+  color: #333;
+  text-decoration: none;
+}
+header nav p a:focus {
+  text-decoration: none;
+}
+
+main section {
+  border: 1px solid #333;
+  height: 300px;
+}
+main section:nth-child(even) img {
+  width: 300px;
+  float: right;
+}
+main section:nth-child(odd) img {
+  width: 300px;
+  float: left;
+}
+main section p {
+  padding: 8px 16px;
+}
+main section p span {
+  font-size: 24px;
+}
+main .plane-tickets-conatainer {
+  background-image: url(../img/plane-tickets.jpg);
+  background-color: #333;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .plane-tickets-conatainer form {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 60px 0;
+  width: fit-content;
+}
+main .plane-tickets-conatainer form h2 {
+  text-align: center;
+}
+main .plane-tickets-conatainer form .departure-place-container,
+main .plane-tickets-conatainer form .arrival-place-container,
+main .plane-tickets-conatainer form .departure-date-container,
+main .plane-tickets-conatainer form .arrival-date-container,
+main .plane-tickets-conatainer form .passangers-amount-container {
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+main .plane-tickets-conatainer form .departure-place-container label,
+main .plane-tickets-conatainer form .arrival-place-container label,
+main .plane-tickets-conatainer form .departure-date-container label,
+main .plane-tickets-conatainer form .arrival-date-container label,
+main .plane-tickets-conatainer form .passangers-amount-container label {
+  margin: 4px 0;
+  font-size: 20px;
+}
+main .plane-tickets-conatainer form .departure-place-container input,
+main .plane-tickets-conatainer form .departure-place-container select,
+main .plane-tickets-conatainer form .arrival-place-container input,
+main .plane-tickets-conatainer form .arrival-place-container select,
+main .plane-tickets-conatainer form .departure-date-container input,
+main .plane-tickets-conatainer form .departure-date-container select,
+main .plane-tickets-conatainer form .arrival-date-container input,
+main .plane-tickets-conatainer form .arrival-date-container select,
+main .plane-tickets-conatainer form .passangers-amount-container input,
+main .plane-tickets-conatainer form .passangers-amount-container select {
+  font-size: 16px;
+  padding: 4px 0;
+}
+main .plane-tickets-conatainer form button {
+  padding: 8px 16px;
+  font-size: 20px;
+  border-radius: 8px;
+  margin-top: 8px;
+  width: 100%;
+  background: linear-gradient(21deg, #5611ec, #dd03e4);
+  color: #fff;
+  outline: none;
+}
+main .plane-tickets-conatainer form button:hover {
+  background: linear-gradient(21deg, #dd03e4, #5611ec);
+  cursor: pointer;
+}
+main .plane-tickets-conatainer form button:focus {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+main .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .card-container .card {
+  margin: 0 4px;
+  width: 270px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 20px #cdc;
+  transition: 0.3s all;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding-bottom: 24px;
+  margin: 60px 0;
+  position: relative;
+}
+main .card-container .card .recommend-block {
+  position: absolute;
+  color: #fff;
+  font-size: 12px;
+  background-color: #444482;
+  padding: 4px 8px;
+  top: 20px;
+  left: 20px;
+  border-radius: 4px;
+  z-index: 1;
+  opacity: 0.5;
+}
+main .card-container .card .recommend-block:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+main .card-container .card .img-container {
+  position: relative;
+  padding: 16px;
+}
+main .card-container .card .img-container img {
+  width: 100%;
+}
+main .card-container .card .img-container:hover .block {
+  display: block;
+  cursor: pointer;
+}
+main .card-container .card .block {
+  content: "";
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  right: 16px;
+  top: 16px;
+  background: #636363b3;
+  opacity: 0.15;
+  border-radius: 6px;
+  display: none;
+}
+main .card-container .card .description {
+  padding: 8px 20px;
+  text-align: start;
+  width: fit-content;
+}
+main .card-container .card .description a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+}
+main .card-container .card .description a span {
+  display: block;
+}
+main .card-container .card .description a:hover {
+  color: #ff8826;
+}
+main .card-container .card .price {
+  font-size: 18px;
+  color: #555;
+  font-weight: bold;
+  padding: 8px 20px;
+}
+main .card-container .card:hover {
+  box-shadow: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
